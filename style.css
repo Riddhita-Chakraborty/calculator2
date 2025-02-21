@@ -173,7 +173,7 @@ body{
     .calculator input {
         width: 73%;
         height: 7vh;
-        font-size: 0.8rem;
+        font-size: 1rem;
         margin-top: 3vh;
     }
 
@@ -188,6 +188,7 @@ body{
         grid-template-columns: repeat(4, 1fr);
         gap: 0.8vh;
         width: 100%;
+        font-size: 0.8rem;
     }
 
     .butn {
