@@ -19,11 +19,13 @@ body{
 }
 .container
 {
+    
     background-color:black;
     padding: 10vh;
-    padding-left: 10vh;
-    padding-top: 10vh;
-    padding-right: 10vh;
+    padding-left: 5vh;
+    padding-top: 5vh;
+    padding-right: 5vh;
+    padding-bottom: 5vh;
     margin-right: 30vh;
     align-items: center;
     justify-content: center;
@@ -43,7 +45,7 @@ body{
 {
     width:75%;
     margin-bottom: 2vh;
-    height: 9vh;
+    height: 12vh;
     border-radius: 5px;
     background-color: aliceblue;
     font-size:5vh;
@@ -52,7 +54,7 @@ body{
 .btn
 {
     width: 20%;
-    height: 10vh;
+    height: 12vh;
     margin-bottom: 2vh;
     background-color: #ff6347; /* Tomato color for emphasis */
     font-weight: bold; /* Make the text bold for better visibility */
@@ -78,7 +80,7 @@ body{
     gap: 1vh;
     margin-bottom: 1vh;
     height:10vh;
-    width:50vh;
+    width:75vh;
     
 }   
 .butn{
