@@ -1,0 +1,195 @@
+body{
+    font-family:  sans-serif;
+    align-items: center;
+    height: 100vh;
+    background-color: beige;
+    display:flex;
+    justify-content: center;
+    margin: 0;
+}
+.calculator
+{
+    display: flex;
+    width:90%;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    max-height: 400px;
+
+}
+.container
+{
+    background-color:black;
+    padding: 10vh;
+    padding-left: 10vh;
+    padding-top: 10vh;
+    padding-right: 10vh;
+    margin-right: 30vh;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    border-radius: 2%;
+    flex-direction:column-reverse;
+}
+.inpt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensure it spans full width */
+    margin-bottom: 2vh; /* Increased margin bottom to increase space below input field */
+    gap:1vh;
+}
+.calculator input 
+{
+    width:75%;
+    margin-bottom: 2vh;
+    height: 9vh;
+    border-radius: 5px;
+    background-color: aliceblue;
+    font-size:5vh;
+    text-align: right;
+}
+.btn
+{
+    width: 20%;
+    height: 10vh;
+    margin-bottom: 2vh;
+    background-color: #ff6347; /* Tomato color for emphasis */
+    font-weight: bold; /* Make the text bold for better visibility */
+    color: white; /* Text color */
+    display:inline-block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.1rem; /* Slightly larger font size for prominence */
+    border-radius: 0 /* Rounded corners */
+    
+}
+.btn:hover {
+    background-color: #e5533f; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+.btn:active {
+    background-color: #d04c34; /* Even darker red when clicked */
+    transform: scale(0.98); /* Shrink the button when clicked */
+}
+.button {
+    display:grid;
+    grid-template-columns: repeat(4, 3fr);
+    gap: 1vh;
+    margin-bottom: 1vh;
+    height:10vh;
+    width:50vh;
+    
+}   
+.butn{
+    background-color: rgb(239, 234, 234);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+}
+.butn:hover {
+    background-color: #9b9998; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+.btn:active {
+    background-color: #9b9998;; /* Even darker red when clicked */
+    transform: scale(0.98); /* Shrink the button when clicked */
+}
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 5vh;
+        padding-left: 5vh;
+        padding-right: 5vh;
+        padding-top: 5vh;
+        margin-right: 0;
+        width: 80%;
+    }
+
+    .calculator input {
+        width: 70%;
+        height: 9vh;
+        font-size: 1rem;
+        
+    }
+
+    .btn {
+        width: 25%;
+        height: 10vh;
+        font-size: 1rem;
+
+    }
+
+    .button {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1vh;
+        width: 100%;
+        
+    }
+
+    .butn {
+        font-size: 1rem;
+        height: 10vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 6vh;
+        width: 80%;
+    }
+
+    .calculator input {
+        width: 75%;
+        height: 9vh;
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        width: 30%;
+        height: vh;
+        font-size: 0.9rem;
+    }
+
+    .button {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5vh;
+        width: 100%;
+    }
+
+    .butn {
+        font-size: 0.9rem;
+        height: 9vh;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .container {
+        padding: vh;
+        width: 100%;
+    }
+
+    .calculator input {
+        width: 73%;
+        height: 7vh;
+        font-size: 0.8rem;
+        margin-top: 3vh;
+    }
+
+    .btn {
+        margin-top: 3vh;
+        width: 25%;
+        height: 8vh;
+        font-size: 0.8rem;
+    }
+
+    .button {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.3vh;
+        width: 100%;
+    }
+
+    .butn {
+        font-size: 0.8rem;
+        height:8vh;
+}
+}
